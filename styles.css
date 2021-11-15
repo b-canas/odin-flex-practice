@@ -63,19 +63,26 @@ html {
     justify-content: space-between;
 }
 
-.header-section h1{
+.header-section h1 { /* header-section child */
+    font-size: 24px;
+    color: var(--main-white);
+}
 
+.nav-bar { /* header-section child */
+    width: 50%;   
 }
 
 .nav-bar ul {
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 25px;
 }
 
 .nav-bar a {
     text-decoration: none;
-    color: var(--main-white);
+    color: var(--main-grey);
+    font-size: 18px;
 }
 
 .introduction-section {
@@ -88,7 +95,23 @@ html {
 .introduction { /* introduction-section child */
     flex: 1 0 0;
 
+}
 
+.introduction h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--main-white);
+}
+
+.introduction p {
+    font-size: 18px;
+    color: var(--main-grey);
+}
+
+.introduction button {
+    background-color: var(--main-sky-blue);
+    color: var(--main-white);
+    font-size: 20px;
 }
 
 .img-container { /* introduction-section child */
@@ -108,7 +131,9 @@ html {
 }
 
 .locations-container h2 { /* location-container child */
-    
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--main-dark-blue);
 }
 
 .gallery-container { /* location-container child */
@@ -119,15 +144,29 @@ html {
 .quote-container {
     display: flex;
     flex-direction: column;
+    background-color: var(--main-grey);
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: var(--main-dark-blue);
+}
+
+.quote-author {
+    font-weight: bold;
 }
 
 .signup-container {
     display: flex;
     justify-content: space-between;
+    background-color: var(--main-sky-blue);
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--main-dark-blue);
 }
