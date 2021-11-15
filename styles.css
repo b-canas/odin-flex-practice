@@ -1,0 +1,133 @@
+:root {
+    --main-dark-blue: #1F2937; /* Dark Blue */
+    --main-white: #F9FAF8; /* White */
+    --main-grey: #E5E7EB; /* Grey */
+    --main-sky-blue: #3882F6; /* Sky Blue */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    scroll-behavior: smooth;
+    background-color: var(--main-white);
+}
+
+.main-section {
+    padding: 5px 300px 50px 300px;
+}
+
+@media (max-width: 100em) {
+    .main-section {
+        padding: 5px 150px 50px 150px;
+    }
+}
+
+@media (max-width: 70em) {
+    .main-section {
+        padding: 5px 100px 50px 100px;
+    }
+}
+
+.introduction-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    background-color: var(--main-dark-blue);
+    color: var(--main-white);
+}
+
+@media (max-width: 70em) {
+    .introduction-container {
+       height: 500px;
+    }
+}
+
+.header-section {
+    flex: 1 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-section h1{
+
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+.introduction-section {
+    flex: 2 0 auto;
+
+    width: 100%;
+    display: flex;
+}
+
+.introduction { /* introduction-section child */
+    flex: 1 0 0;
+
+
+}
+
+.img-container { /* introduction-section child */
+    flex: 1 0 0;
+
+}
+
+.img-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.locations-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.locations-container h2 { /* location-container child */
+    
+}
+
+.gallery-container { /* location-container child */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
