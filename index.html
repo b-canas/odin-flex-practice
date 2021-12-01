@@ -25,14 +25,14 @@
 
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="">header link one</a></li>
-                    <li><a href="">header link two</a></li>
-                    <li><a href="">header link three</a></li>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#getaway_examples">Getaway Examples</a></li>
+                    <li><a href="#inspiration">Inspiration</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section class="introduction-section">
+        <section class="introduction-section" id="introduction">
             <aside class="introduction">
                 <h1>Find the perfect nature getaway for your Getaway</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor repudiandae rem possimus modi animi quisquam?</p>
@@ -40,47 +40,57 @@
             </aside>
 
             <div class="img-container">
+                <!--Image taken from pexels.com -->
+                <!-- SOURCE: https://www.pexels.com/photo/mountain-beside-body-of-water-with-aurora-borealis-2113566/ -->
                 <img src="https://images.pexels.com/photos/2113566/pexels-photo-2113566.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
             </div>
         </section>
     </div>
 
-    <section class="main-section locations-container">
-        <h2>Some Random Information</h2>
+    <section class="main-section locations-container" id="getaway_examples">
+        <h2>Enjoy Nature's natural beauty</h2>
+
+        <!--
+        -- The following images are claimed to be free-use and are taken from pexels.com
+        -- Image 1: https://www.pexels.com/photo/anonymous-travelers-holding-hands-against-spectacular-waterfall-4338015/
+        -- Image 2: https://www.pexels.com/photo/palm-trees-at-beach-3214944/
+        -- Image 3: https://www.pexels.com/photo/person-standing-and-holding-lamp-inside-cave-2397414/
+        -- Image 4: https://www.pexels.com/photo/rocky-mountains-under-blue-sky-2356059/
+        -->
 
         <div class="gallery-container">
             <figure>
-                <img src="" class="gallery-img"/>
-                <figcaption>This is some subtext under the image</figcaption>
+                <img src="https://images.pexels.com/photos/4338015/pexels-photo-4338015.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="gallery-img"/>
+                <figcaption>Captivating waterfalls</figcaption>
             </figure>
 
             <figure>
-                <img src="" class="gallery-img"/>
-                <figcaption>This is some subtext under the image</figcaption>
+                <img src="https://images.pexels.com/photos/3214944/pexels-photo-3214944.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="gallery-img"/>
+                <figcaption>Delightful beach days</figcaption>
             </figure>
 
             <figure>
-                <img src="" class="gallery-img"/>
-                <figcaption>This is some subtext under the image</figcaption>
+                <img src="https://images.pexels.com/photos/2397414/pexels-photo-2397414.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="gallery-img"/>
+                <figcaption>Exciting cave explorations</figcaption>
             </figure>
 
             <figure>
-                <img src="" class="gallery-img"/>
-                <figcaption>This is some subtext under the image</figcaption>
+                <img src="https://images.pexels.com/photos/2356059/pexels-photo-2356059.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="gallery-img"/>
+                <figcaption>Fulfilling hikes through mountains</figcaption>
             </figure>
         </div>
     </section>
 
-    <section class="main-section quote-container">
-        <p class="quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum sequi incidunt nam earum vel assumenda et odit ducimus, aspernatur, nemo quas. Sequi pariatur sint debitis ea possimus ullam maxime ipsum?</p>
-        <p class="quote-author">-Human Person</p>
+    <section class="main-section quote-container" id="inspiration">
+        <p class="quote">"Those who contemplate the beauty of the earth find reserves of strength that will endure as long as life lasts."</p>
+        <p class="quote-author">-Rachel Carson</p>
     </section>
 
-    <section class="main-section signup-container">
-        <div class="signup-wrapper">
+    <section class="main-section signup-external-container">
+        <div class="signup-internal-container">
             <div>
-                <p style="font-weight:bold;">Call to action! It's time!</p>
-                <p>Sign up for our product by clicking that button right over there!</p>
+                <p style="font-weight:bolder;">Call to action! It's time!</p>
+                <p>Sign up for your Getaway right now!</p>
             </div>
             
             <button type="button" class="outro-button">Sign up</button>
@@ -91,13 +101,4 @@
         <p>Copyright &#169; Brian Canas' Submission for The Odin Project 2021</p>
     </footer>
 </body>
-
 </html>
-
-<style>
-    .gallery-img {
-        border: 1px solid blue;
-        width: 150px;
-        height: 150px;
-    }
-</style>
